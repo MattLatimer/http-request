@@ -15,6 +15,6 @@ request.get('https://sytantris.github.io/http-examples/future.jpg')
     console.log('Download Complete.');
   })
   .pipe(fs.createWriteStream('./future.jpg')
-  .on('finish', () => {
-    console.log('File written to disk.');
-  }));
+    .on('finish', () => {
+      console.log('File written to disk.');
+    }));
